@@ -1,0 +1,75 @@
+/*@font-face {
+    font-family: gilroy;
+    src: url(../fonts/Gilroy-ExtraBold.otf) format('otf');
+}
+@font-face {
+    font-family: ChronicleDisplay;
+    src: url(../fonts/Chronicle.ttf) format('ttf');
+}*/
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+.align-center {
+    align-items: center;
+}
+
+header {
+    margin-top: 64px;
+    margin-inline: 80px;
+    & .logo {
+        font-size: 32px;
+        font-weight: 700;
+    }
+    & nav {
+        & ul {
+            gap: 40px;
+            & li {
+                & a {
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    & .cta {
+        gap: 8px;
+        & img {
+
+        }
+        & span {
+            font-size: 18px;
+            font-weight: 700;
+        }
+    }
+}
+
+section.welcome {
+    margin-inline: 80px;
+    margin-top: 200px;
+}
+.clouds, .mountains, .land {
+    z-index: -2;
+    width: 100%;
+    position: absolute;
+}
+
+.clouds {
+    top: 0;
+}
+.mountains {
+    top: 845px;
+}
+.land {
+    top: 1542px;
+}
+.fog {
+    top: 0;
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+}
