@@ -20,6 +20,9 @@
 .justify-center {
     justify-content: center;
 }
+.justify-end {
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
 }
@@ -27,6 +30,7 @@
 body {
     
     color: #fff;
+    background-color: #0B1D26;
     
 }
 
@@ -141,11 +145,33 @@ section.welcome {
 .hiking-guide {
     max-width: 1462px;
     margin: 0 auto;
-    margin-top: 842px;
+    margin-top: 900px;
+    & .gradient-overlay {
+        position: absolute;
+        top: 1175px;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        background-color: red;
+        height: 700px;
+        background: #0B1D26;
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, rgba(11, 29, 38, 1) 72%);
+    }
      & article {
-        & .text-content {
+        gap: 114px;
+        margin-bottom: 200px;
+         & .text-content {
+            position: relative;
+            max-width: 632px;
+            & .order-number {
+                position: absolute;
+                top: -103px;
+                left: -150px;
+                opacity: 0.1;
+                font-size: 240px;
+                font-weight: 240px;
+            }
             
-            width: 630px;
             & h2 {
                 font-size: 64px;
                 margin-block: 27px;
@@ -158,6 +184,27 @@ section.welcome {
      }
 }
 
+
+footer {
+    max-width: 1462px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    & .right {
+        gap: 212px;
+        & h4 {
+            color: #FBD784;
+            margin-bottom: 24px;
+            font-size: 24px;
+        }
+    }
+    ul {
+        & li {
+            font-size: 18px;
+            margin-bottom: 16px;
+            line-height: 32px;
+        }
+    }
+}
 
 
 
@@ -173,13 +220,13 @@ section.welcome {
 }
 
 .clouds {
-    top: 0;
+    top: 0px;
 }
 .mountains {
-    top: 845px;
+    top: 464px;
 }
 .land {
-    top: 1542px;
+    top: 768px;
 }
 .fog {
     top: 0;
