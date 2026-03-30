@@ -10,13 +10,64 @@
 .flex {
     display: flex;
 }
+.flex-column {
+    flex-direction: column;
+}
 
 .justify-between {
     justify-content: space-between;
 }
+.justify-center {
+    justify-content: center;
+}
+.justify-end {
+    justify-content: flex-end;
+}
 .align-center {
     align-items: center;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    
+    color: #fff;
+    background-color: #0B1D26;
+    
+}
+
+.overlay{
+    background: #0B1D26;
+    background: linear-gradient(164deg,rgba(11, 29, 38, 1) 0%, rgba(11, 29, 38, 0.04) 40%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1200px;
+     z-index: -1;
+}
+
+section {
+    & .line {
+            width: 72px;
+            height: 2px;
+            background-color: #FBD784;
+            display: inline-block;
+            margin-right: 32px;
+        }
+        & span {
+            color: #FBD784;
+
+        }
+
+}
+ 
+
+
+
+
+
 
 header {
     margin-top: 64px;
@@ -48,12 +99,149 @@ header {
     }
 }
 
+
+
 section.welcome {
     margin-inline: 80px;
     margin-top: 200px;
+     & .social-links {
+        gap: 24px;
+        & p {
+            rotate: 90deg;
+            margin-bottom: 24px;
+
+        }
+     }
+
+    & .title {
+        
+        
+        & h1 {
+            font-size: 88px;
+            width:  950px;
+            margin-block: 32px;
+            
+        }
+        & a {
+            font-size: 18px;
+            & img {
+                margin-left: 16px;
+            }
+        }
+        
+    }
+    & .slider {
+        border-right: 3px solid #ffffff8a;
+        
+        & li {
+            
+            padding-block: 20px;
+            &:first-child {
+                border-right: 3px solid #ffffff;
+                padding-right: 32px;
+                margin-right: -3px;
+            }
+        }   
+    }
 }
+
+.hiking-guide {
+    max-width: 1462px;
+    margin: 0 auto;
+    margin-top: 1600px;
+    & .gradient-overlay {
+        position: absolute;
+        top: 1930px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        width: 100%;
+        height: 700px;
+        background: #0B1D26;
+        background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, rgba(11, 29, 38, 1) 72%);
+    }
+     & article {
+        gap: 114px;
+        margin-bottom: 200px;
+         & .text-content {
+            position: relative;
+            max-width: 632px;
+            & .order-number {
+                position: absolute;
+                top: -103px;
+                left: -150px;
+                font-size: 240px;
+                opacity: 0.1;
+            }
+            
+            & h2 {
+                font-size: 64px;
+                margin-block: 27px;
+            }
+            & p {
+                margin-bottom: 27px;
+                line-height: 32px;
+            }
+            & a {
+                font-size: 18px;
+                color: #FBD784;
+            }
+          }
+
+     }
+}
+
+footer {
+    max-width: 1462px;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    & .left {
+        & a {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 32px;
+            &:first-of-type {
+                max-width: 303px;
+                margin-bottom: 120px;
+            }
+            &:last-of-type {
+                opacity: 0.5;
+            }
+        }
+    }
+    & .right {
+        gap: 212px;
+         & h4 {
+        color: #FBD784;
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    ul {
+        & li {
+            font-size: 18px;
+            margin-bottom: 16px;
+            line-height: 32px;
+        }
+    }
+    }
+   
+}
+
+
+
+
+
+
+
+
+
 .clouds, .mountains, .land {
-    z-index: -2;
+    z-index: -3;
     width: 100%;
     position: absolute;
 }
@@ -69,7 +257,8 @@ section.welcome {
 }
 .fog {
     top: 0;
-    z-index: -1;
+    z-index: -2;
     position: absolute;
     width: 100%;
 }
+
