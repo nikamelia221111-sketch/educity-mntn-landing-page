@@ -189,13 +189,31 @@ footer {
     max-width: 1462px;
     margin: 0 auto;
     margin-bottom: 120px;
+    & .left {
+        & a {
+            display: inline-block;
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        & p {
+            font-size: 18px;
+            line-height: 32px;
+            &:first-of-type {
+                max-width: 303px;
+                margin-bottom: 120px;
+            }
+            &:last-of-type {
+                opacity: 0.5;
+            }
+        }
+    }
     & .right {
         gap: 212px;
-        & h4 {
-            color: #FBD784;
-            margin-bottom: 24px;
-            font-size: 24px;
-        }
+         & h4 {
+        color: #FBD784;
+        font-size: 24px;
+        margin-bottom: 24px;
     }
     ul {
         & li {
@@ -203,6 +221,7 @@ footer {
             margin-bottom: 16px;
             line-height: 32px;
         }
+    }
     }
 }
 
